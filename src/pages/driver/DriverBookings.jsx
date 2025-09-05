@@ -30,7 +30,7 @@ const DriverBookings = () => {
   const getDriverData = async () => {
     try {
       const { data } = await axios.post(
-        "http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/driver/getSingleDriver",
+        "https://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/driver/getSingleDriver",
         { id }
       );
       setDriver(data.driver);
@@ -66,7 +66,7 @@ const DriverBookings = () => {
       if (modalType === "start") {
         // Start the ride
         await axios.post(
-          "http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/driver/start-ride",
+          "https://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/driver/start-ride",
           {
             driverId: id,
             bookingId: selectedBooking._id,
@@ -84,7 +84,7 @@ const DriverBookings = () => {
       } else if (modalType === "end") {
         // End the ride
         await axios.post(
-          "http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/driver/end-ride",
+          "https://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/driver/end-ride",
           {
             driverId: id,
             bookingId: selectedBooking._id,
@@ -98,7 +98,7 @@ const DriverBookings = () => {
 
         // Send earnings to driver
         await axios.post(
-          "http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/driver/earnings",
+          "https://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/driver/earnings",
           {
             driverId: id,
             bookingId: selectedBooking._id,

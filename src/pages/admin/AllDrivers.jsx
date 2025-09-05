@@ -28,7 +28,7 @@ const AllDrivers = () => {
     try {
       setLoading(true);
       const { data } = await axios.get(
-        "http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/driver/getALLDriver"
+        "https://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/driver/getALLDriver"
       );
       setAllDrivers(data);
     } catch (error) {
@@ -42,7 +42,7 @@ const AllDrivers = () => {
   const handleVerification = async (driverId, verifyStatus) => {
     try {
       await axios.post(
-        `http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/driver/verify`,
+        `https://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/driver/verify`,
         {
           id: driverId,
           verification: verifyStatus,

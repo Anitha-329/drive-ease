@@ -27,7 +27,7 @@ const AllUsers = () => {
   const getALLUsers = async () => {
     try {
       const { data } = await axios.get(
-        "http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/user/allUsers"
+        "https://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/user/allUsers"
       );
       setUsers(data.owners || []);
     } catch (error) {
