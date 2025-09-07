@@ -22,7 +22,7 @@ const UserProfile = () => {
     try {
       console.log(id);
       const { data } = await axios.post(
-        "https://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/user/getSingleUser",
+        "http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/user/getSingleUser",
         {
           id,
         }

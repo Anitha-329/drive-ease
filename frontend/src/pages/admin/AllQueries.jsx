@@ -18,7 +18,7 @@ const AllQueries = () => {
   const getALLQueries = async () => {
     try {
       const { data } = await axios.get(
-        "https://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/user/allQuery"
+        "http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/user/allQuery"
       );
       setAllQueries(data);
       setLoading(false);

@@ -236,12 +236,12 @@ const Signup = () => {
 
       if (formData.role === "driver") {
         endpoint =
-          "https://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/driver/signup";
+          "http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/driver/signup";
         storageKey = "driver";
         redirectPath = "/driver/profile";
       } else if (formData.role === "rider") {
         endpoint =
-          "https://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/user/signup";
+          "http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/user/signup";
         storageKey = "user";
         redirectPath = "/user/dashboard";
       }

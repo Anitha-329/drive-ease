@@ -30,7 +30,7 @@ const AllBookings = () => {
   const getAllBookings = async () => {
     try {
       const { data } = await axios.get(
-        "https://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/booking/get-all"
+        "http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/booking/get-all"
       );
       setAllBookings(data?.data || []);
     } catch (error) {
@@ -43,7 +43,7 @@ const AllBookings = () => {
   const getALLDrivers = async () => {
     try {
       const { data } = await axios.get(
-        "https://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/driver/getALLDriver"
+        "http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/driver/getALLDriver"
       );
       setAllDrivers(data || []);
     } catch (error) {
@@ -55,7 +55,7 @@ const AllBookings = () => {
     setAssigning(true);
     try {
       await axios.post(
-        "https://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/booking/assign-driver",
+        "http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/booking/assign-driver",
         {
           bookingId,
           driverId,

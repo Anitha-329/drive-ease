@@ -40,18 +40,18 @@ const Login = () => {
       switch (loginType) {
         case "user":
           endpoint =
-            "https://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/user/login";
+            "http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/user/login";
           dashboardRoute = "/user/bookings";
           break;
         case "driver":
           endpoint =
-            "https://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/driver/login";
+            "http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/driver/login";
           dashboardRoute = "/driver/profile";
           break;
         
         default:
           endpoint =
-            "https://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/user/login";
+            "http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/user/login";
           dashboardRoute = "/user-dashboard";
       }
 

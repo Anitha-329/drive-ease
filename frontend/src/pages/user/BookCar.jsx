@@ -218,7 +218,7 @@ const BookCar = () => {
       handler: async function (response) {
         try {
           const bookingResponse = await axios.post(
-            "https://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/user/addBooking",
+            "http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/user/addBooking",
             {
               ...bookingData,
               paymentId: response.razorpay_payment_id,
