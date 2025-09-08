@@ -235,13 +235,11 @@ const Signup = () => {
       let redirectPath = "";
 
       if (formData.role === "driver") {
-        endpoint =
-          "http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/driver/signup";
+        endpoint = "https://drive-ease-ab1k.onrender.com/driver/signup";
         storageKey = "driver";
         redirectPath = "/driver/profile";
       } else if (formData.role === "rider") {
-        endpoint =
-          "http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/user/signup";
+        endpoint = "https://drive-ease-ab1k.onrender.com/user/signup";
         storageKey = "user";
         redirectPath = "/user/dashboard";
       }

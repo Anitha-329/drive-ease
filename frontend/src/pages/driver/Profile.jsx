@@ -27,7 +27,7 @@ const Profile = () => {
   const getDriverData = async () => {
     try {
       const { data } = await axios.post(
-        "http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/driver/getSingleDriver",
+        "https://drive-ease-ab1k.onrender.com/driver/getSingleDriver",
         { id }
       );
       setDriver(data.driver);

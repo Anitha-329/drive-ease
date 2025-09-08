@@ -30,7 +30,7 @@ const Queries = () => {
   const fetchQueries = async () => {
     try {
       const response = await axios.post(
-        "http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/user/getSingleUser",
+        "https://drive-ease-ab1k.onrender.com/user/getSingleUser",
         {
           id,
         }
@@ -54,7 +54,7 @@ const Queries = () => {
     setIsSubmitting(true);
     try {
       const response = await axios.post(
-        "http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/user/createQuery",
+        "https://drive-ease-ab1k.onrender.com/user/createQuery",
         {
           userId: id,
           queryText: newQuery,
@@ -80,7 +80,7 @@ const Queries = () => {
 
     try {
       const response = await axios.delete(
-        "http://my-mern-api-env.eba-yh8jahid.us-east-1.elasticbeanstalk.com/query/delete",
+        "https://drive-ease-ab1k.onrender.com/query/delete",
         {
           data: { queryId, userId: id },
         }
